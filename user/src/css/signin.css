@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Audrey';
+  src: url("../fonts/Audrey-Normal.otf");
+}
+
+@font-face {
+  font-family: 'SaolDisplay';
+  src: url("../fonts/SaolDisplay-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Tangerine';
+  src: url("../fonts/Tangerine_Regular.otf");
+}
+
+*::selection {
+  color: #fff;
+  background-color: #260e02;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tangerine', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: transparent url("../../public/media/wallpaper_1.jpg") center/cover;
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+}
+
+.form {
+  background: linear-gradient(120deg, #8a4e30, #431a06);
+  color: antiquewhite;
+  font-family: 'SaolDisplay';
+  font-weight: 100;
+  letter-spacing: 3px;
+  opacity: 0.75;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 325px;
+  margin-bottom: 10px;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.form:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.form input {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: bisque;
+}
+
+.form input:hover {
+  background-color: #ffdab9; /* Lighter shade on hover */
+}
+
+.form button {
+  display: block;
+  width: calc(100% - 100px);
+  margin: 5px auto;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3a62ad;
+  color: white;
+  font-family: 'SaolDisplay';
+  font-size: large;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #255785; /* Darker shade on hover */
+}
+
+.hidden {
+  display: none;
+}
+
+#toggleText {
+  font-size: 22px;
+}
+
+#toggleText span {
+  color: #5f2b10;
+  cursor: pointer;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+#toggleText span:hover {
+  color: #260e02;
+}
+
+.cancel a {
+  text-decoration: none;
+  color: #260e02;
+  font-size: 20px;
+}
+
+.cancel a:hover {
+  color: #5c331e;
+  font-weight: bold;
+}
+.password-toggle {
+  position: absolute;
+  right: 25px;
+  top: 65%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+@media (max-width:900px){
+  body{
+    background-image: url(https://i.pinimg.com/736x/f8/e4/7b/f8e47bb787cf57e21fdac462c67433dc.jpg);
+    color:aliceblue;
+  }
+}
