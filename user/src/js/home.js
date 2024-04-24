@@ -22,10 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.getElementById("tryNowButton").addEventListener("click", function() {
-<<<<<<< HEAD
     window.location.href = "./index.html";
-=======
-    window.location.href = "../public/signin.html";
->>>>>>> 24cc5ef62446d87bb991b87f639a8186e61cdd45
 });
 
